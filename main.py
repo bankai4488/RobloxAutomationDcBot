@@ -7,6 +7,7 @@ import requests
 from typing import Optional
 import os
 import logging
+import webserver
 
 # Configure logging
 logging.basicConfig(
@@ -438,6 +439,7 @@ def main():
         logger.error(f"Error running bot: {e}")
         raise
 
+webserver.keep_alive()
 
 if __name__ == "__main__":
     main()
