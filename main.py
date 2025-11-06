@@ -439,7 +439,8 @@ def main():
         logger.error(f"Error running bot: {e}")
         raise
 
-webserver.keep_alive()
+
 
 if __name__ == "__main__":
+    webserver.keep_alive()
     main()
